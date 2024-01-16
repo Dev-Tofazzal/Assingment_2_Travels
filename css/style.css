@@ -15,6 +15,8 @@
 }
 a{
     text-decoration: none;
+    color: #ffff;
+   
 }
 
 
@@ -100,6 +102,10 @@ header,main,.footer_main{
 .input_border input,select,button{
     padding: 10px ;
     
+}
+.banner_btn i{
+    color: #ffff;
+    margin-left: 10px;
 }
 /* banner part end here */
 
@@ -363,8 +369,11 @@ footer{
     padding: 0px 24px  32px 24px;
 
 }  
-  .input_border{
+.input_border{
     flex-direction: column;
+}
+.banner_btn a,i{
+    color:#fff ;
 }
   .input_border input,select,button{
     margin: 16px 0 ;
@@ -376,6 +385,7 @@ footer{
 /* popular tour part responsive */
 .popular_tour{
     flex-direction: column;
+    padding: 20px;
 }
 
 /* destination part  responsive */
