@@ -18,7 +18,7 @@ a{
 }
 
 
-header,main{
+header,main,.footer_main{
     margin:  50px 135px ;
 }
 
@@ -277,6 +277,38 @@ header,main{
 
 /* newslatter part end here */
 
+/* footer start here */
+footer{
+    background-color: rgba(19, 19, 24, 0.05);
+    padding: 100px 0;
+}
+.footer_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.foot_des{
+    padding-bottom: 5px;
+}
+.foot_title{
+    text-align: center;
+}
+
+.foot_title P{
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 25px 240px 0px 240px;
+}
+
+.foot_title i{
+    
+    margin-left: 10px;
+    font-size: 20px;
+}
+/* footer end here */
+
 
 /* media query for responsive */
 
@@ -361,6 +393,14 @@ header,main{
 .travel_discount h3{
     font-size: 1rem;
     font-weight: 800;
+}
+
+/* footer part responsive */
+
+.foot_title P{
+    
+    font-size: 14px;
+    padding:20px  0;
 }
 
 }
