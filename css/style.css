@@ -103,8 +103,9 @@ header,main,.footer_main{
     padding: 10px ;
     
 }
-.banner_btn i{
-    color: #ffff;
+
+.search_icon{
+    color: #fff;
     margin-left: 10px;
 }
 /* banner part end here */
@@ -372,9 +373,7 @@ footer{
 .input_border{
     flex-direction: column;
 }
-.banner_btn a,i{
-    color:#fff ;
-}
+
   .input_border input,select,button{
     margin: 16px 0 ;
     
