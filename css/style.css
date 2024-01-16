@@ -1,0 +1,173 @@
+/* common css here  */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+}
+.primary_clr{
+    color: #FF5400;
+}
+.primary_bgclr{
+    background-color: #FF5400;
+   
+}
+a{
+    text-decoration: none;
+}
+
+
+header,main{
+    margin:  50px 135px ;
+}
+
+/* header part start here */
+    /* nav  part start here */
+    .nav_main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav_logo{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    nav> ul {
+        display: flex;
+        gap: 40px;
+        
+    }
+    nav ul li{
+        list-style: none;
+    }
+    nav ul li a{
+        color: #424247;
+        font-size: 1rem;
+        font-weight: 400px;
+    }
+    nav ul li a:hover{
+        color: #FF5400;
+    }
+  
+  
+    /* nav part end here */
+/* header part end here */
+
+/* banner part start here */
+.banner{
+    background: url(../Images/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+.banner_title{
+    padding: 106px  0  25px  0;
+    color: #FFF;
+    font-size: 4rem;
+    font-weight: 800;
+}
+.banner_description{
+    padding: 24px 245px 50px 245px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+.banner_input{
+    padding: 0px 185px  50px 185px;
+
+}
+.input_border{
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    padding: 10px ;
+    display: flex;
+    justify-content: space-evenly;
+}
+.input_border input,select,button{
+    padding: 10px ;
+    
+}
+/* banner part end here */
+
+/* popular tour part start here */
+.popular_tour{
+    display: flex;
+    margin: 100px 0px;
+}
+.popular_tour h2{
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+   
+}
+.popular_tour p{
+    padding: 24px  0;
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+
+}
+.popular_tour button{
+    padding: 15px  30px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+.popular_tour li{
+    margin-left: 15px;
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+/* popular tour part end here */
+
+
+/* media query for responsive */
+
+@media screen and (max-width:576px) {
+   header,main{
+    margin: 20px;
+}
+   nav ul{
+    flex-direction: column;
+}
+/* banner part responsive  */
+   .banner_title{
+    padding: 32px  65px  5px  65px;
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+  .banner_description{
+    padding: 0px 15px 32px 15px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+}
+  .banner_input{
+    padding: 0px 24px  32px 24px;
+
+}  
+  .input_border{
+    flex-direction: column;
+}
+  .input_border input,select,button{
+    margin: 16px 0 ;
+    
+}
+.tour-description-img Img{
+    width: 100%;
+}
+/* popular tour part responsive */
+.popular_tour{
+    flex-direction: column;
+}
+
+}
+
