@@ -243,6 +243,39 @@ header,main,.footer_main{
     height: 70px; 
 }
 /* Choose us part end  here */
+/* bouus part start here */
+.bonus_main{
+    margin: 20px 0;
+}
+.bonus_des{
+    display: flex;
+    justify-content: space-between;
+}
+.bonus_item{
+    padding: 85px;
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+.comnt_man{
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.com_icon{
+    font-size: 30px;
+}
+.bonus_btn{
+    margin-top: 10px 10px;
+    color: #ffff;
+    border: none;
+    border-radius: 10px;
+}
+
+/* bouus part end here */
 
 /* newslatter part start here */
 .newslatter_main{
@@ -441,13 +474,18 @@ footer{
     padding: 32px 65px 32px 32px;
 }
 
+/* bonus part start responsive here */
+.bonus_des{
+    flex-direction: column;
+}
+/* bonus part end here */
 /* newslatter responsive */
 .newslatter_main{
     flex-direction: column;
 }
 .newslatter_input input{
     width: 80%;
-    padding: 16px 15px 16px 80px;
+    padding: 20px 0px;
 }
 .newslatter_img .travel_discount {
    
