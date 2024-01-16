@@ -1,6 +1,10 @@
 /* common css here  */
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap');
 
+.hide{
+    display: none;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -225,9 +229,7 @@ header,main,.footer_main{
     
 }
 .item{
-    /* display: flex;
-    justify-content: center;
-    display: flex; */
+    
     margin: 0 auto;
     width: 50%;
     margin-top: 20px;
@@ -371,6 +373,9 @@ footer{
     margin-left: 10px;
     font-size: 20px;
 }
+hr{
+    margin: 40px 0;
+}
 /* footer end here */
 
 
@@ -508,5 +513,7 @@ footer{
     padding:20px  0;
 }
 
+
 }
+
 
