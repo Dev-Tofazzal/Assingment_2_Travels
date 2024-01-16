@@ -21,6 +21,10 @@ a{
 header,main,.footer_main{
     margin:  50px 135px ;
 }
+.container{
+    width: 1170px ;
+    margin: 0 auto;
+}
 
 /* header part start here */
     /* nav  part start here */
@@ -46,11 +50,16 @@ header,main,.footer_main{
         color: #424247;
         font-size: 1rem;
         font-weight: 400px;
+        
     }
+ 
     nav ul li a:hover{
         color: #FF5400;
     }
   
+    .burgirmenu{
+        display: none;
+    }
   
     /* nav part end here */
 /* header part end here */
@@ -188,29 +197,44 @@ header,main,.footer_main{
 .choose_card-item:hover{
     background-color: rgba(41, 206, 246, 0.05);
 }
+.item:hover{
+    background-color: rgba(41, 206, 246, 0.05);
+}
 .choose_card-item img{
     width: 70px;
     height: 70px;
 }
-.choose_card-item h3{
+.choose_card-item,.item h3{
     margin: 20px 0;
     color: #131318;
     font-size: 24px;
     font-weight: 800;
     
 }
-.choose_card-item p{
+.choose_card-item,.item p{
     color: #5A5A5D;
     font-size: 16px;
     font-weight: 400;
     
 }
-/* .item{
-    display: flex;
-    align-items: center;
-   
+.item{
+    /* display: flex;
+    justify-content: center;
+    display: flex; */
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 20px;
+    background: rgba(251, 181, 99, 0.05);
+    padding: 32px 65px 32px 32px ;  
     
-} */
+}
+
+
+
+.item  img{
+    width: 70px;
+    height: 70px; 
+}
 /* Choose us part end  here */
 
 /* newslatter part start here */
@@ -316,6 +340,9 @@ footer{
    header,main{
     margin: 20px;
 }
+.container{
+    width: 335px;
+}
    nav ul{
     flex-direction: column;
 }
@@ -332,7 +359,7 @@ footer{
     font-size: 16px;
     font-weight: 400;
 }
-  .banner_input{
+.banner_input{
     padding: 0px 24px  32px 24px;
 
 }  
@@ -360,8 +387,7 @@ footer{
     padding: 10px 15px 25px 10px;
 }
 .des_card_img{
-    flex-direction: column;
- 
+    flex-direction: column; 
 }
 .des_card_img{
     padding: 0px;
@@ -373,13 +399,45 @@ footer{
 .chosse_card{
     flex-direction: column;
 }
+.item{
+    /* width: 50%; */
+    width: 100%;
+    padding: 0;
+    margin: 2px;
+    
+}
+.item_details{
+    padding: 20px;
+}
+.menu {
+    display: none;
+}
+
+.burgirmenu{
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.burgirmenu > img {
+    width: 50px;
+    height: 50px;
+}
+
+.burgirmenu:hover {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.item-details {
+    padding: 32px 65px 32px 32px;
+}
 
 /* newslatter responsive */
 .newslatter_main{
     flex-direction: column;
 }
 .newslatter_input input{
-
+    width: 80%;
     padding: 16px 15px 16px 80px;
 }
 .newslatter_img .travel_discount {
