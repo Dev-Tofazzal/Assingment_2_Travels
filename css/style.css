@@ -61,6 +61,7 @@ header,main{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    border-radius: 10px;
     text-align: center;
 }
 .banner_title{
@@ -127,10 +128,159 @@ header,main{
 
 /* popular tour part end here */
 
+/* destination part start here */
+.destination_main{
+    margin-bottom: 100px;
+}
+.des_title{
+    text-align: center;
+}
+.des_title h2{
+    color: #131318;
+    font-size: 2.4rem;
+    font-weight: 800;
+    
+}
+.des_title P{
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 25px 340px 25px 340px;
+}
+.des_card_img{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+.des_card_img img{
+    width: 100%;
+}
+/* .card_img{
+    position: relative;
+} */
+.card_img {
+    position: relative;
+
+}
+.card_img h3{
+    position: absolute;
+    color: #FFF;
+    font-size: 1.7rem;
+    font-weight: 800;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* destination part end here */
+/* Choose us part start  here */
+.chosse_card{
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+   
+}
+.choose_card-item{
+    padding: 32px 65px 32px 32px ;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+.choose_card-item:hover{
+    background-color: rgba(41, 206, 246, 0.05);
+}
+.choose_card-item img{
+    width: 70px;
+    height: 70px;
+}
+.choose_card-item h3{
+    margin: 20px 0;
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+    
+}
+.choose_card-item p{
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+/* .item{
+    display: flex;
+    align-items: center;
+   
+    
+} */
+/* Choose us part end  here */
+
+/* newslatter part start here */
+.newslatter_main{
+    margin: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.newslatter_input{
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+}
+.newslatter_input h3{
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+   
+}
+.newslatter_input p{
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 40px 0;
+   
+}
+
+.newslatter_input input{
+    display: flex;
+    margin: 10px 2px;
+    padding: 15px 250px 20px 15px;
+}
+.newslatter_input  button{
+    width: 100%;
+    border: none;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 800;
+    
+}
+.newslatter_img{
+    position: relative;
+}
+.newslatter_img img{
+    width: 100%;
+   
+    
+}
+.newslatter_img .travel_discount {
+    position: absolute;
+    color: #fff;
+    bottom: 55px;
+    left: 396px;
+    border-radius: 10px;
+    transform: rotate(-24deg);
+    padding: 10px 15px;
+    text-align: center;
+}
+.travel_discount h3{
+    font-size: 32px;
+    font-weight: 800;
+}
+
+/* newslatter part end here */
+
 
 /* media query for responsive */
 
-@media screen and (max-width:576px) {
+@media screen and (max-width:600px) {
    header,main{
     margin: 20px;
 }
@@ -167,6 +317,50 @@ header,main{
 /* popular tour part responsive */
 .popular_tour{
     flex-direction: column;
+}
+
+/* destination part  responsive */
+.des_title h2{
+    font-size: 1.1rem;   
+}
+.des_title P{
+    font-size: 14px;
+    padding: 10px 15px 25px 10px;
+}
+.des_card_img{
+    flex-direction: column;
+ 
+}
+.des_card_img{
+    padding: 0px;
+}
+.des_card_img img{
+    width: 100%;
+    height: 200px;
+}
+.chosse_card{
+    flex-direction: column;
+}
+
+/* newslatter responsive */
+.newslatter_main{
+    flex-direction: column;
+}
+.newslatter_input input{
+
+    padding: 16px 15px 16px 80px;
+}
+.newslatter_img .travel_discount {
+   
+    bottom: 15%;
+    left: 70%;
+    transform: rotate(-54deg);
+    padding: 0px 0px;
+    
+}
+.travel_discount h3{
+    font-size: 1rem;
+    font-weight: 800;
 }
 
 }
